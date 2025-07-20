@@ -7,4 +7,6 @@ services:
     startCommand: python bot.py
     envVars:
       - key: BOT_TOKEN
-        value: your-telegram-bot-token
+        value: your-bot-token
+      - key: PYTHON_VERSION
+        value: "3.10"
