@@ -23,7 +23,7 @@ async def cmd_start(message: types.Message):
 # Эхо-ответ на текст
 @dp.message(F.text)
 async def echo_message(message: types.Message):
-    await message.answer("Мой первый бот на сервере !" )
+    await message.answer(" Привет ! Это мой первый бот на сервере !" )
 
 # Запуск бота
 async def main():
