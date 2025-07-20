@@ -18,12 +18,12 @@ dp = Dispatcher()
 # Обработчик команды /start
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
-    await message.answer("Привет! Я эхо-бот на aiogram v3.Мой первый бот на сервере !")
+    await message.answer("Привет! Я эхо-бот на aiogram v3.")
 
 # Эхо-ответ на текст
 @dp.message(F.text)
 async def echo_message(message: types.Message):
-    await message.answer(message.text)
+    await message.answer("Мой первый бот на сервере !" )
 
 # Запуск бота
 async def main():
